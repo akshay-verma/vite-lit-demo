@@ -14,7 +14,9 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build"
+    "build": "tsc && vite build",
+    "vercel-dev-helper": "vite --port $PORT",
+    "vdev": "vercel dev --local-config ./vercel-dev.json"
   },
   "dependencies": {
     "lit": "^2.6.1"
