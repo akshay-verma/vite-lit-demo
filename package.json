@@ -1,20 +1,12 @@
 {
   "name": "vite-project",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
-  "main": "dist/my-element.es.js",
-  "exports": {
-    ".": "./dist/my-element.es.js"
-  },
-  "types": "types/my-element.d.ts",
-  "files": [
-    "dist",
-    "types"
-  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "preview": "vite preview --port 8080",
     "vercel-dev-helper": "vite --port $PORT",
     "vdev": "vercel dev --local-config ./vercel-dev.json"
   },
